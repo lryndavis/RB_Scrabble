@@ -1,5 +1,6 @@
 require('rspec')
 require('scrabble')
+require('pry')
 
 describe('String#scrabble') do
   it("returns a scrabble score for a letter") do
@@ -24,6 +25,6 @@ describe('String#scrabble') do
     expect("q".scrabble()).to(eq(10))
   end
   it("returns multiple scores for each letter in a word") do
-    expect("word".scrabble()).to(eq([4, 1 , 1, 2]))
-  end 
+    expect("word".scrabble()).to(eq(8))
+  end
 end
