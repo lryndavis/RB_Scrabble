@@ -8,9 +8,9 @@ describe('String#scrabble') do
   it("returns a scrabble score for a letter") do
     expect("d".scrabble()).to(eq(2))
   end
-  # it("returns a scrabble score for a letter") do
-  #   expect("b".scrabble()).to(eq(3))
-  # end
+  it("returns a scrabble score for a letter") do
+    expect("b".scrabble()).to(eq(3))
+  end
   # it("returns a scrabble score for a letter") do
   #   expect("f".scrabble()).to(eq(4))
   # end
