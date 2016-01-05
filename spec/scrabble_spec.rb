@@ -27,4 +27,7 @@ describe('String#scrabble') do
   it("returns multiple scores for each letter in a word") do
     expect("word".scrabble()).to(eq(8))
   end
+  it("returns correct score when uppercase word is input") do
+    expect("WORD".scrabble()).to(eq(8))
+  end
 end
